@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICM</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <section id="container">
+
+        <div class="collum1">
+            <div class="content-post">
+                <div class="title">
+                    <h1>Cálculo IMC</h1>
+                </div>
+                <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para
+                    calcular o peso ideal de cada pessoa. </p>
+                <p>
+                    O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao
+                    quadrado. Diz-se que o
+                    indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.
+                </p>
+                <p>
+                    Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da
+                    tabela. Importante:
+                    siga os exemplos e use pontos como separadores.</p>
+
+            </div>
+            <div class="calculos">
+
+                <div class="calc_altura">
+
+                    <span>Altura<small>(ex.: 1,70)</small></span>
+                    <input type="text" name="altura" id="calc_height" maxlength="4" placeholder="Metros">
+
+                </div>
+
+                <div class="calc_peso">
+
+                    <span>Peso<small>(ex.: 69,2)</small></span>
+                    <input type="text" name="peso" id="calc_peso" placeholder="Quilos" maxlength="6">
+                </div>
+
+            </div>
+
+            <div class="buttons">
+                <button class="button azul" type="button" id="calcular" onclick="imc()">Calcular</button>
+
+                <button class="button red" type="button" id="limpar">Limpar</button>
+
+            </div>
+
+
+            <div class="resultado" id="resultado">
+
+            </div>
+        </div>
+
+        <div class="collum2">
+            <table class="table-calc">
+
+                <thead>
+                    <td colspan="3">Veja a interpretação do IMC </td>
+                </thead>
+
+                <tbody>
+
+                    <tr class="table-calc-blue">
+                        <td>IMC</td>
+                        <td>Classificação</td>
+                        <td class="center-grau">Obesidade <small>(grau)</small></td>
+                    </tr>
+
+                    <tr class="result-calc-1" id="calc1">
+                        <td>Menor que 18,5 </td>
+                        <td>Magreza</td>
+                        <td class="center-grau">0</td>
+                    </tr>
+
+                    <tr class="result-calc-2" id="calc2">
+                        <td>Entre 18,5 e 24,9 </td>
+                        <td>Normal</td>
+                        <td class="center-grau">0</td>
+                        </t>
+
+                    <tr class="result-calc-3" id="calc3">
+                        <td>Entre 25,0 e 29,9</td>
+                        <td>Sobrepeso</td>
+                        <td class="center-grau">I</td>
+                    </tr>
+
+                    <tr class="result calc-4" id="calc4">
+                        <td>Entre 30,0 e 39,9 </td>
+                        <td>Obesidade</td>
+                        <td class="center-grau">II</td>
+                    </tr>
+
+                    <tr class="result-calc-5" id="calc5">
+                        <td>Maior que 40,0</td>
+                        <td>Obesidade grave</td>
+                        <td class="center-grau">III</td>
+                    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+
+
+
+
+
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
