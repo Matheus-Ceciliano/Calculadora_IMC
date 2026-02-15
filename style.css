@@ -628,10 +628,6 @@ thead td {
 */
 @media (max-width:400px) {
 
-
-
-
-
     .collum1 {
         width: 100%;
         justify-content: center;
@@ -652,8 +648,8 @@ thead td {
     }
 
     .table-calc {
-        width: 100%;
-        max-width: 100%;
+        width: 90%;
+        max-width: 90%;
         margin: 0;
         table-layout: fixed;
         /* força caber na tela */
