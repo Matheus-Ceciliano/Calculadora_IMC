@@ -652,12 +652,8 @@ thead td {
     .table-calc {
 
 
-        margin: 0;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-
-        max-width: 50px;
+        width: auto;
+        table-layout: auto;
 
 
     }
