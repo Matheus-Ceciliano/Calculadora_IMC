@@ -632,9 +632,11 @@ thead td {
 
 
     .collum2 {
+        width: 100%;
         margin: 0;
         justify-content: center;
         margin-top: 0;
+        display: flex;
 
 
     }
@@ -653,14 +655,13 @@ thead td {
 
 
     .table-calc {
-        width: 100%;
+        width: 90%;
 
-        /* força colunas se ajustarem */
     }
 
     .table-calc tbody tr td {
 
-        padding: 12px;
+        padding: 1px;
         font-weight: 400;
         font-size: 10px;
 
