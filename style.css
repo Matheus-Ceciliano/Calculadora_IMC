@@ -432,6 +432,23 @@ thead td {
 
     }
 
+    .table-calc {
+        width: 100%;
+        max-width: 70px;
+
+
+    }
+
+    .table-calc tbody tr td {
+        padding: 0 18px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #dee2e7;
+        font-weight: 400;
+        font-size: 10px;
+        white-space: nowrap;
+        color: #5f5f5f;
+    }
+
     .content-post {
         width: 90%;
 
@@ -521,13 +538,126 @@ thead td {
     .table-calc {
 
 
-        margin-left: 0;
-        margin-top: 0;
-        margin-left: 0;
-        margin-top: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
         width: 100%;
 
-        max-width: 70px;
+        max-width: 50px;
+
+
+    }
+
+    .table-calc tbody tr td {
+        padding: 0 18px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #dee2e7;
+        font-weight: 400;
+        font-size: 10px;
+        white-space: nowrap;
+        color: #5f5f5f;
+    }
+
+
+
+
+    .content-post {
+        width: 90%;
+
+    }
+
+    .title {
+        margin-top: 5px;
+    }
+
+    .title h1 {
+        font-size: 29px;
+    }
+
+    .content-post p {
+        font-size: 14px;
+    }
+
+    input[type='text'] {
+        width: 120px;
+        height: 29px;
+
+
+
+    }
+
+    .calculos {
+        margin: 0;
+        width: 90%;
+    }
+
+    .buttons {
+        margin-left: 0;
+        gap: 5px;
+        width: 90%;
+
+    }
+
+    .button {
+        width: 120px;
+
+    }
+
+    .resultado {
+
+        padding: 0 10px;
+        margin-left: 0px;
+        color: #012f6b;
+
+        margin-bottom: 5px;
+        font-weight: 500;
+        font-size: 24px;
+        width: 80%;
+
+
+    }
+
+    .resultado span {
+        color: #1365cf;
+        font-size: 24px;
+
+    }
+
+}
+
+@media (max-width:360px) {
+
+
+
+
+    .collum2 {
+        width: 40%;
+        justify-content: center;
+        margin-top: 0;
+        display: none;
+
+    }
+
+    .collum1 {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        margin: 0;
+        max-height: 600px;
+        display: none;
+
+    }
+
+    .table-calc {
+
+
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        max-width: 50px;
 
 
     }
