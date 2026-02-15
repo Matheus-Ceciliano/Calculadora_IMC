@@ -650,7 +650,7 @@ thead td {
     .table-calc {
         width: 90%;
         /* diminui largura */
-        max-width: 300px;
+        max-width: 350px;
         /* controla tamanho máximo */
         margin: 0 auto;
         /* centraliza */
