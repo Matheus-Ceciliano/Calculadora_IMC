@@ -649,10 +649,12 @@ thead td {
 
     .table-calc {
         width: 90%;
-        max-width: 90%;
-        margin: 0;
+        /* diminui largura */
+        max-width: 300px;
+        /* controla tamanho máximo */
+        margin: 0 auto;
+        /* centraliza */
         table-layout: fixed;
-        /* força caber na tela */
     }
 
     .table-calc td {
