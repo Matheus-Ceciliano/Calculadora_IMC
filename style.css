@@ -631,15 +631,6 @@ thead td {
 
 
 
-    .collum2 {
-        width: 100%;
-        margin: 0;
-        justify-content: center;
-        margin-top: 0;
-        display: flex;
-
-
-    }
 
     .collum1 {
         width: 100%;
@@ -652,20 +643,29 @@ thead td {
 
     }
 
-
-
-    .table-calc {
-        width: 90%;
-
+    .collum2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow-x: auto;
+        /* evita sair da tela */
     }
 
-    .table-calc tbody tr td {
+    .table-calc {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        table-layout: fixed;
+        /* força caber na tela */
+    }
 
-        padding: 1px;
-        font-weight: 400;
+    .table-calc td {
         font-size: 10px;
-
-        color: #5f5f5f;
+        padding: 6px;
+        white-space: normal;
+        /* permite quebrar linha */
+        word-break: break-word;
+        /* quebra palavras grandes */
     }
 
 
