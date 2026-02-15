@@ -631,7 +631,7 @@ thead td {
 
 
     .collum2 {
-        width: 40%;
+        align-items: center;
         justify-content: center;
         margin-top: 0;
 
@@ -647,6 +647,10 @@ thead td {
         max-height: 600px;
         display: none;
 
+    }
+
+    table {
+        margin: 0;
     }
 
     .table-calc {
