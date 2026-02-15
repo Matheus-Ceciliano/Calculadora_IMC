@@ -633,9 +633,9 @@ thead td {
         justify-content: center;
         align-items: center;
         margin-top: 0;
+        display: flex;
         margin: 0;
         max-height: 600px;
-        display: none;
 
     }
 
