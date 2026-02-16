@@ -1,3 +1,6 @@
+const input_altura =  document.getElementById("calc_height");
+ const input_peso = document.getElementById("calc_peso");
+
 function aplicarVirgula() {
     const input = document.getElementById("calc_height");
 
@@ -78,15 +81,18 @@ function imc() {
 
     if (peso === "" || altura === "") {
         alert("Digite corretamente para calcular");
+
         return;
     }
     if (altura_validado < 0.5 || altura_validado > 2.5) {
         alert("Digite uma altura válida entre 0,50m e 2,50m");
+        input_altura.value = "";
         return;
     }
     if (peso_validado < 10 || peso_validado > 300) {
         alert("Digite um peso válido entre 10kg e 300kg");
         return;
+        input_peso.value = ""; 
     }
 
 
@@ -130,6 +136,28 @@ function imc() {
         obesidade.style.backgroundColor = "rgb(235, 253, 234)";
     }
     else if (imc_resultado >= 40) {
-        obesidade_grave.style.backgroundColor = "rgb(235, 253, 234)";
+        obesidade_grave.style.backgroundColor = "rgb(246, 255, 246)";
     }
 };
+
+
+function limpar(){
+
+    const magreza = document.getElementById("calc1");
+    const normal = document.getElementById("calc2");
+    const sobrepeso = document.getElementById("calc3");
+    const obesidade = document.getElementById("calc4");
+    const obesidade_grave = document.getElementById("calc5");
+
+    magreza.style.backgroundColor = "";
+    normal.style.backgroundColor = "";
+    sobrepeso.style.backgroundColor = "";
+    obesidade.style.backgroundColor = "";
+    obesidade_grave.style.backgroundColor = "";
+
+    input_peso.value = "";  
+    input_altura.value = ""; 
+
+
+
+}
